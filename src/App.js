@@ -1,22 +1,20 @@
-import logo from './logo.svg';
+import logo from './load.gif'
 import './App.css';
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
+        <h1>There'll be something here... eventually 👀</h1>
+        <img src={logo} width="20%" alt="loading..." />
+        <p>If you can't wait that long, find me on   <a
           className="App-link"
-          href="https://reactjs.org"
+          href="https://www.linkedin.com/in/jarrettpierse/"
           target="_blank"
           rel="noopener noreferrer"
         >
-          Learn React
-        </a>
+          LinkedIn
+        </a> 🙂</p>
       </header>
     </div>
   );
