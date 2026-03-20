@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portfolio</title><!-- updated at runtime from content.js -->
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Geneva:wght@400&display=swap"
+    rel="stylesheet"
+  />
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="css/mac.css" />
+</head>
+<body>
+
+  <!-- ============ MENU BAR (built by mac-engine.js) ============ -->
+  <div id="menubar"></div>
+
+  <!-- ============ DESKTOP (windows injected by mac-engine.js) ============ -->
+  <div id="desktop"></div>
+
+  <!-- ============ MODALS (injected by mac-engine.js) ============ -->
+  <div id="modals"></div>
+
+  <!-- ============ MOBILE SITE (injected by mac-engine.js) ============ -->
+  <div id="mobile-site"></div>
+
+  <!-- Tooltip -->
+  <div class="tooltip" id="tooltip"></div>
+
+  <!-- ============ SCRIPTS ============ -->
+  <!--
+    Load order matters:
+      1. content.js  — your text, data, and settings (edit this!)
+      2. mac-engine.js — reads CONTENT and builds the whole UI
+  -->
+  <script src="content.js"></script>
+  <script src="js/mac-engine.js"></script>
+
+</body>
+</html>
