@@ -1284,6 +1284,7 @@ function buildCVView() {
         <span class="cv-entry-period">${j.period}</span>
       </div>
       <div class="cv-entry-role">${j.role}</div>
+      ${j.url ? `<a href="${j.url}" target="_blank" rel="noopener noreferrer" class="cv-entry-link">↗ Visit Website</a>` : ''}
     </div>
   `).join('');
 

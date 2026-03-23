@@ -1,26 +1,11 @@
 /**
  * ============================================================
- *  PORTFOLIO CONTENT — edit this file to update your site
- * ============================================================
- *
- *  This is the only file you need to touch.
- *  Everything else (CSS, layout, animations) is handled
- *  automatically by the rest of the project.
- *
- *  HOW TO EDIT
- *  -----------
- *  - Strings go inside quotes: "like this"
- *  - Keep commas at the end of each line inside objects/arrays
- *  - Backtick strings (`) can span multiple lines
- *  - HTML tags are allowed inside backtick strings
+ *  PORTFOLIO CONTENT
  * ============================================================
  */
 
 const CONTENT = {
 
-  /* ----------------------------------------------------------
-   * SITE META
-   * ---------------------------------------------------------- */
   site: {
     title:    "Jarrett Pierse — Portfolio",
     name:     "Jarrett Pierse",
@@ -39,20 +24,13 @@ const CONTENT = {
     dontclick: { left:  850, top: 80, w: 180, h: 110 },
   },
 
-  /* ----------------------------------------------------------
-   * ABOUT ME WINDOW
-   * ---------------------------------------------------------- */
   about: {
-    // Filename of your portrait image (placed in the project root).
-    // This is shown in the portrait window AND the about window.
-    // To use a remote URL instead: "https://example.com/photo.jpg"
     portraitUrl: "headshot.jpeg",
 
     tagline: "Web Developer · UX Designer · Digital Consultant",
 
     intro: "Based in London, I build digital experiences that feel easy for customers and perform for businesses.",
 
-    // Skill tags shown as black pills
     skills: ["Web Dev", "UX", "Shopify", "Webflow", "Email Automation", "SEO", "Digital Marketing", "Social Strategy"],
 
     bio: `Hey there,
@@ -87,20 +65,6 @@ Based in London, UK.
 Open to freelance projects & collaborations.`,
   },
 
-  /* ----------------------------------------------------------
-   * WORK EXPERIENCE WINDOW
-   *
-   * Each entry needs:
-   *   id       — unique key, no spaces (used internally)
-   *   company  — full company name
-   *   role     — your role / short description
-   *   period   — date range string
-   *   tags     — array of skill tags shown in the case study
-   *   body     — HTML string for the case study content
-   *
-   * To add a new entry, copy one block and paste it at the
-   * top or bottom of this array.
-   * ---------------------------------------------------------- */
   workExperience: [
     {
       id:      "laserskinclinics",
@@ -108,6 +72,7 @@ Open to freelance projects & collaborations.`,
       role:    "UX Design · Web Design · Email Marketing",
       period:  "2026",
       tags:    ["Shopify", "Klaviyo", "SEO", "Digital Strategy", "Google Ads"],
+      url:     "https://laserandskin.ie",
       body: `
         <h2>Laser + Skin Clinics</h2>
         <span class="cs-tag">Shopify</span>
@@ -127,6 +92,7 @@ Open to freelance projects & collaborations.`,
       role:    "Web Development",
       period:  "2025",
       tags:    ["Web Development", "Branding", "Social Media"],
+      url:     "https://hatch105.com",
       body: `
         <h2>Hatch105 — the internship program for future entrepreneurs</h2>
         <span class="cs-tag">Web Development</span>
@@ -142,6 +108,7 @@ Open to freelance projects & collaborations.`,
       role:    "UX · Visual Merchandising · Fashion Show Production",
       period:  "2024–Present",
       tags:    ["UX Design", "Shopify", "Visual Merchandising", "Ireland Fashion Week"],
+      url:     "https://bold-golf.com",
       body: `
         <h2>Bold Golf</h2>
         <span class="cs-tag">UX Design</span>
@@ -181,23 +148,13 @@ Open to freelance projects & collaborations.`,
         <span class="cs-tag">Computer Science</span>
         <span class="cs-tag">Research</span>
         <span class="cs-tag">Knowledge Graphs</span>
-        <p>For my undergraduate thesis, I developed a method of connecting climate and tourism data using knowledge graphs as an effective</p>
-        <p>methodology for querying the data. This research included a usability study using established research methods and resulted in a</p>
-        <p>peer-reviewed publication in the <em>IEEE Journal of Selected Topics in Applied Earth Observations and Remote Sensing</em>.</p>
+        <p>For my undergraduate thesis, I developed a method of connecting climate and tourism data using knowledge graphs as an effective methodology for querying the data. This research included a usability study using established research methods and resulted in a peer-reviewed publication in the <em>IEEE Journal of Selected Topics in Applied Earth Observations and Remote Sensing</em>.</p>
         <p><a href="https://www.researchgate.net/publication/367446676" target="_blank" rel="noopener noreferrer" style="color:#000080;text-decoration:underline;">↗ Improving Tourism Analytics From Climate Data Using Knowledge Graphs</a></p>
       `,
     },
   ],
 
-  /* ----------------------------------------------------------
-   * SERVICES WINDOW
-   *
-   * Each service needs:
-   *   icon   — emoji
-   *   title  — short name
-   *   desc   — one or two sentences shown on the card
-   *   detail — longer text shown when the card is clicked
-   * ---------------------------------------------------------- */
+
   services: [
     {
       icon:   "💻",
@@ -225,11 +182,6 @@ Open to freelance projects & collaborations.`,
     },
   ],
 
-  /* ----------------------------------------------------------
-   * CONTACT WINDOW
-   *
-   * To hide a contact item, delete its block entirely.
-   * ---------------------------------------------------------- */
   contact: [
     {
       label: "Email",
@@ -243,19 +195,9 @@ Open to freelance projects & collaborations.`,
     },
   ],
 
-  /* ----------------------------------------------------------
-   * RESEARCH PAPER WINDOW
-   *
-   * Place your PDF file in the project root folder
-   * (same folder as index.html) and set the filename below.
-   *
-   * Position and size are controlled by layout.paper above.
-   * To disable this window entirely, set: enabled: false
-   * ---------------------------------------------------------- */
   paper: {
     enabled:  false,
     filename: "paper.pdf",
     title:    "📄 Research Paper",
   },
-
 };
